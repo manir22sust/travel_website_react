@@ -49,17 +49,23 @@ function Navbar() {
                 <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
                     Products
                 </Link>
-              </li><li className='nav-item'>
-                <Link to='/' className='nav-links-mobile' onClick={closeMobileMenu}>
-                    Sign Up
-                </Link>
               </li>
+              
+              <li>
+              <Link
+                to='/sign-up'
+                className='nav-links-mobile'
+                onClick={closeMobileMenu}
+              >
+                Sign Up
+              </Link>
+            </li>
           </ul>
           {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
-          </div>
-          </nav>
-        </>
-    )
+        </div>
+      </nav>
+    </>
+  );
 }
 
-export default Navbar
+export default Navbar;
